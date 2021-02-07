@@ -27,7 +27,6 @@ public class VehicleController {
         return vehicleService.getVehicles(showHired);
     }
 
-    // localhost:8080/api/v1/vehicle/calculate?id=12121&startDate=2021-02-06&endDate=2021-03-06
     @GetMapping("/calculate")
     public HashMap<String, Object> getCalculation(@RequestParam String id, @RequestParam String startDate,
             @RequestParam String endDate) {
