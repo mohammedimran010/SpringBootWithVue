@@ -14,13 +14,8 @@ const useStyles = makeStyles((theme) => ({
   available: {
     color: "green",
   },
-  root: {
-    flexGrow: 1,
-  },
   paper: {
-    padding: theme.spacing(2),
-    margin: "auto",
-    maxWidth: 500,
+    padding: theme.spacing(2)
   },
 }));
 
@@ -66,19 +61,19 @@ const Vehicle = (props) => {
   };
 
   return (
-    <div className={classes.root}>
+    <>
       <Paper className={classes.paper}>
         <Grid container spacing={2}>
           <Grid item container>
             <Grid item xs container direction="column" spacing={2}>
-              <Grid item xs container direction="column">
+              <Grid item container direction="column">
                 <Typography variant="subtitle1" gutterBottom>
                   {vehicle.category}
                 </Typography>
                 <Typography variant="body2" gutterBottom>
                   {vehicle.vrn}
                 </Typography>
-                <Typography variant="body2" gutterBottom>
+                 <Typography variant="body2" gutterBottom>
                   {vehicle.make}
                 </Typography>
                 <Typography variant="body2" gutterBottom>
@@ -87,7 +82,6 @@ const Vehicle = (props) => {
                 <Typography variant="body2" gutterBottom>
                   {vehicle.fuelType}
                 </Typography>
-                <Typography variant="body2" gutterBottom></Typography>
                 {getHireStatus(vehicle.hireStatus)}
               </Grid>
               <Grid item>
@@ -109,7 +103,7 @@ const Vehicle = (props) => {
         </Grid>
       </Paper>
       <Modal isOpen={open} onClose={handleClose} vehicleId={vehicleId} />
-    </div>
+    </>
   );
 };
 

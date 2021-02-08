@@ -85,7 +85,7 @@ const Home = () => {
     <Grid item xs={12} sm={10} className={classes.root}>
       {isLoading && <Progress />}
       {hasError && <Error errorMessage="Something went wrong :-(" />}
-      {filteredResults.length && (
+      {filteredResults.length > 0 && (
         <>
           <Grid container spacing={4} alignItems="center">
             <Grid item>
