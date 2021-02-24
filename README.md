@@ -1,12 +1,12 @@
 # springboot-sample-app
 
-This project demonstartes the basic idea of what Spring Boot and Create React App do.
+This project demonstartes the basic idea of what Spring Boot and Vue CLI do.
 
 Create React App helps you start a React project very quickly. It gives you all the basic things you need to get up and running asap.
 Spring boot helps you start and maintain a spring application quickly and easily.
 
 ## Goals
-1) Develop the frontend using React
+1) Develop the frontend using VueJS
 2) Develop the backend using Spring boot
 3) Package the Frontend and backend in a single jar file
 
@@ -35,9 +35,9 @@ cd src/main/ui
 npm i
 npm start
 ```
-Please note that create-react-app has built in support for development-time proxy’ing the API calls via the typical NodeJS port of 3000 over to your Spring Boot web controllers on port 8080. When running the packaged jar in production, etc you don’t need to use the proxy mechanism since the Spring Boot embedded web server will be serving up the frontend, React content.
+Please note that Vue CLI has built in support for development-time proxy’ing the API calls via the typical NodeJS port of 9999 over to your Spring Boot web controllers on port 8080. When running the packaged jar in production, etc you don’t need to use the proxy mechanism since the Spring Boot embedded web server will be serving up the frontend, React content.
 
-Access the application at [http://localhost:3000](http://localhost:3000)
+Access the application at [http://localhost:9999](http://localhost:9999)
 
 
 
