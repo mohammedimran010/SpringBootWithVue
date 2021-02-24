@@ -52,7 +52,7 @@
 				<version>${frontend-maven-plugin.version}</version>
 				<configuration>
 					<nodeVersion>${node.version}</nodeVersion>
-					<npmVersion>${yarn.version}</npmVersion>
+					<npmVersion>${npm.version}</npmVersion>
 					<workingDirectory>${frontend-src-dir}</workingDirectory>
 					<installDirectory>${project.build.directory}</installDirectory>
 				</configuration>
@@ -89,7 +89,7 @@
 				<version>3.2.0</version>
 				<executions>
 					<execution>
-						<id>position-react-build</id>
+						<id>position-vuejs-build</id>
 						<goals>
 							<goal>copy-resources</goal>
 						</goals>
@@ -98,7 +98,7 @@
 							<outputDirectory>${project.build.outputDirectory}/static</outputDirectory>
 							<resources>
 								<resource>
-									<directory>${frontend-src-dir}/build</directory>
+									<directory>${frontend-src-dir}/dist</directory>
 									<filtering>false</filtering>
 								</resource>
 							</resources>
