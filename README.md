@@ -2,7 +2,7 @@
 
 This project demonstartes the basic idea of what Spring Boot and Vue CLI do.
 
-Create React App helps you start a React project very quickly. It gives you all the basic things you need to get up and running asap.
+Vue CLI helps you start a React project very quickly. It gives you all the basic things you need to get up and running asap.
 Spring boot helps you start and maintain a spring application quickly and easily.
 
 ## Goals
